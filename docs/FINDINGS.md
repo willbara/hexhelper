@@ -1,7 +1,7 @@
 # Findings
 
 What we learned building Hex Helper: how Hex Empire works under the hood, how the game's AI decides, and
-what made the advisor stronger. The results come from roughly 42,000 simulated games against the game's
+what made the advisor stronger. The results come from roughly 52,000 simulated games against the game's
 own AI, plus ~170,000 rule-check moves and one experiment inside the real Flash Player.
 
 All win rates are for your nation against three AI nations. On Hard (difficulty 10) the AI is biased to
@@ -70,7 +70,7 @@ how it breaks ties, which goes through Flash's unstable `Array.sort` (measured i
 | Exact AI copy (Flash tie-breaking) | 84% | measured against the faithful opponent |
 
 Aggressive mode goes after the nation that's cheapest to eliminate. It won 64% when introduced, 76-85%
-after its first tuning, and 87-89% with pacts, speeches and the exact AI copy. It wins in ~32-34 turns,
+after its first tuning, and 87-92% with pacts, speeches and the exact AI copy. It wins in ~32-34 turns,
 against ~37 for normal mode. On Medium both modes win 94-96%.
 
 ### What didn't help
